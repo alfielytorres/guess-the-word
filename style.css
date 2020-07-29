@@ -1,0 +1,53 @@
+main{
+    padding:30px;
+    background-color:black;
+    color:white;
+ 
+        width:auto;
+        height:300px;
+        position: absolute; /*Can also be `fixed`*/
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+    
+}
+span{
+    border-bottom:1px soloid #534f59;
+    display:inline-block;
+    margin:0 1px;
+    line-height: 2.4rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration-color: #534f59;
+    width:1.5rem;
+}
+#app{
+   text-align: center;
+   
+}
+body{
+    background-color:black;
+}
+
+footer{
+    padding:10px 50px 10px 50px;
+    background-color:#0C6EFD;
+    color:white;
+    text-align: center;
+}   
+
+.guesses-left{
+    color:#4a93ff;
+}
+
+.word-text{
+  font-size:30px;
+
+}
+
