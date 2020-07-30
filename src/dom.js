@@ -1,5 +1,6 @@
 
-const generatePuzzleDOM = () => {
+
+const generatePuzzleDOM = (hangman) => {
     const word = document.getElementById('word-div')
     const wordText = document.createElement('p')
     wordText.setAttribute('class','word-text')
@@ -16,7 +17,7 @@ const generatePuzzleDOM = () => {
 }
 
 
-const generateStatusDOM = () => {
+const generateStatusDOM = (hangman) => {
     //generate guess
     const guessLeft = document.getElementById('guesses-left-div')
     const guessText = document.createElement('p')
@@ -24,10 +25,6 @@ const generateStatusDOM = () => {
     guessLeft.textContent=''
     guessText.textContent=hangman.guessMessage
     guessLeft.appendChild(guessText)
-
-   
-   
-
 
 }
 
@@ -45,3 +42,5 @@ const generatePlayAgainDOM = () => {
 
 
 }
+
+export {generatePuzzleDOM, generateStatusDOM, generatePlayAgainDOM} 

@@ -1,3 +1,5 @@
+import { generatePlayAgainDOM } from './dom'
+
 class Hangman{
     constructor(word,remainingGuesses, status='playing'){
         this.word=word.toLowerCase().split('') // splits the word into an array of its letters 
@@ -54,7 +56,7 @@ class Hangman{
     get guessMessage() {
         let message
         if(this.status==='playing'){
-            message=`Guesses left: ${hangman.remainingGuesses}`
+            message=`Guesses left: ${this.remainingGuesses}`
         }else if(this.status==='finished'){
             message=`Great You Guessed The Word!`
         }else if(this.status==='failed'){
@@ -78,4 +80,4 @@ class Hangman{
     
 }
 
-
+export { Hangman as default }
